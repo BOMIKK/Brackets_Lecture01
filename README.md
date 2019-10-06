@@ -6,8 +6,8 @@
 
   * web-fonts-fontawesome -아이콘
 
-![main](./img/main.jpg)
-![brackets](./img/brackets.jpg)
+![main](./img/main.JPG)
+![brackets](./img/brackets.JPG)
 
 ### 느낀점
 - 브리켓으로 바로 화면을 볼수 있고, 좌우 분할로 html파일과 css파일을 함께 사용하니 편리했다.
