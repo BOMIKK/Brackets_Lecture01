@@ -1,0 +1,110 @@
+/*배경이미지 꽉 들어차게 하기위해선 부모 클래스도 다 100% */
+html,body{
+    width: 100%;
+    height:100%;
+    
+    }
+
+.bx-wrapper,.bx-viewport,.slider{
+    width: 100%;
+    height:100%;    
+}
+
+.background__01{
+    width: 100%;
+    height:100%;
+    background: url("../images/a.jpg") no-repeat;
+    /*배경이미지 정렬*/
+    background-size: cover;
+    background-position: center;
+    
+}
+.background__02{
+    width: 100%;
+    height:100%;
+    background: url("../images/b.jpg") no-repeat;
+    /*배경이미지 정렬*/
+    background-size: cover;
+    background-position: center;
+    
+}
+.background__03{
+    width: 100%;
+    height:100%;
+    background: url("../images/c.jpg") no-repeat;
+    /*배경이미지 정렬*/
+    background-size: cover;
+    background-position: center;
+    
+}
+.overlay{
+   width:100%;
+   height:100%;
+       
+    background:url("../images/16.png");
+    position:absolute;
+    top:0;
+    z-index:10;
+    
+    
+}
+.contents{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    font-family: "Malgun Gothic",sans-serif;
+    /*화면 정중앙 배치 ,화면 크기의 반 빼기*/
+    margin-left: -190px;
+    margin-top: -109px;
+    
+    z-index: 20;
+    text-align: center;
+}
+.contents__name{
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+      
+}
+.contents__job{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+      
+}
+.contents__icon{
+    
+      
+}
+
+/*li 여백 줄이기*/
+.contents__list{
+    font-size: 0;
+    
+}
+.contents__list > li{
+    font-size: 16px;
+    display: inline-block;
+    width: 52px;
+    height:52px;
+    border:1px solid white;
+    border-radius: 50%;
+    
+    /*height와 같은 값으로 지정시 수직 중앙 정렬*/
+    line-height: 52px;
+    margin-right: 25px;
+    
+    
+}
+/*마지막 까지 마진 적용 지우기*/
+.contents__list > li:last-child{
+    margin-right: 0;
+    
+}
+.contents__list > li >a{
+    color:white;
+    /*inherit 부모의 색 상속*/
+    
+}
